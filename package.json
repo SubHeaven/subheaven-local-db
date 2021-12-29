@@ -1,0 +1,32 @@
+{
+    "name": "subheaven-local-db",
+    "version": "0.1.1",
+    "description": "A simple npm cli/tool project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "node config.js"
+    },
+    "bin": {
+        "subheaven-local-db": "./cli.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SubHeaven/subheaven-local-db.git"
+    },
+    "author": {
+        "name": "SubHeaven",
+        "email": "subheaven.paulo@gmail.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/SubHeaven/subheaven-local-db/issues"
+    },
+    "homepage": "https://github.com/SubHeaven/subheaven-local-db#readme",
+    "dependencies": {
+        "debug": "^4.3.1",
+        "subheaven-arg": "github:SubHeaven/subheaven-arg",
+        "subheaven-tools": "github:SubHeaven/subheaven-tools",
+        "tingodb": "^0.6.1"
+    }
+}
