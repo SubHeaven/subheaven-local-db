@@ -4,10 +4,7 @@
     "description": "A simple npm cli/tool project",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-    },
-    "bin": {
-        "subheaven-local-db": "./cli.js"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
