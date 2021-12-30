@@ -8,14 +8,14 @@ npm i https://github.com/SubHeaven/subheaven-local-db
 
 ## Como importar
 ```
-const database = require('./index.js')();
+const database = require('subheaven-local-db')();
 ```
 
 Com isso ele irá gerar uma pasta chamada ***local-db\database*** onde será gravado o banco de dados.
 É possível também informar um nome diferente para a pasta logo depois de ***local-db***:
 
 ```
-const database = require('./index.js')('compras');
+const database = require('subheaven-local-db')('compras');
 ```
 
 Com isso ele irá gerar uma pasta chamada ***local-db\compras***. Isso é particularmente útil quando queremos gerenciar várias pastas em uma mesma raiz. O equivalente a um database.
