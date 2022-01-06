@@ -44,9 +44,13 @@ class Database {
     insert = async (collection, data) => {
         return new Promise(async (resolve, reject) => {
             try {
-                let result = this.db.collection(collection).insert(data);
-                await this.check_limit(collection);
-                resolve(result);
+                this.db.collection(collection).insert(data, async (err, result) => {
+                    if (err) reject(err)
+                    else {
+                        await this.check_limit(collection);
+                        resolve(result);
+                    }
+                });
             } catch (ex) {
                 reject(ex);
             }
